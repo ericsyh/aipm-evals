@@ -1,5 +1,9 @@
 # PM Signal
 
+**Status: Prototype — for demonstration and reference only.**
+
+> This repository is a concept prototype, not a complete product ready for real-world use or production deployment. It demonstrates the proposed experience and selected implementation paths. Native plugin installation, automatic agent execution and production multi-user identity are not implemented; other capabilities remain experimental.
+
 **Useful AI workflows for product managers. Private feedback. Recording by choice.**
 
 PM Signal is a small reference prototype for discussing AI adoption in product teams. It starts with practical workflows for PMs and gives leads aggregate insights about where AI fits into the work. Telemetry is optional and off by default. The prototype illustrates a product direction rather than establishing productivity or business impact.
