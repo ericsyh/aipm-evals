@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks":[{"type":"command","command":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider codex --include-content"}]}],
+    "PostToolUse": [{"matcher":".*","hooks":[{"type":"command","command":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider codex --include-content"}]}],
+    "Stop": [{"hooks":[{"type":"command","command":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider codex --include-content"}]}]
+  }
+}

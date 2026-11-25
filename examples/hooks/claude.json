@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks":[{"type":"command","command":"node","args":["/ABSOLUTE/PM_SIGNAL/collector/capture.mjs","--provider","claude","--include-content"],"timeout":12}]}],
+    "PostToolUse": [{"matcher":".*","hooks":[{"type":"command","command":"node","args":["/ABSOLUTE/PM_SIGNAL/collector/capture.mjs","--provider","claude","--include-content"],"timeout":12}]}],
+    "Stop": [{"hooks":[{"type":"command","command":"node","args":["/ABSOLUTE/PM_SIGNAL/collector/capture.mjs","--provider","claude","--include-content"],"timeout":12}]}]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "workflowRules": [
+    { "id": "research", "task": "research", "enabled": true, "minMatches": 1, "keywords": ["user research", "user interview", "customer interview", "feedback synthesis", "用户研究", "用户访谈", "用户反馈"] },
+    { "id": "requirements", "task": "requirements", "enabled": true, "minMatches": 1, "keywords": ["requirements analysis", "requirements", "user story", "acceptance criteria", "需求分析", "需求拆解", "验收条件", "用户故事"] },
+    { "id": "competition", "task": "competition", "enabled": true, "minMatches": 1, "keywords": ["competitor", "competitors", "competitive analysis", "competitive research", "竞品", "竞争对手"] },
+    { "id": "design", "task": "design", "enabled": true, "minMatches": 1, "keywords": ["product design", "interaction design", "information architecture", "interaction flow", "产品设计", "交互设计", "信息架构"] },
+    { "id": "data", "task": "data", "enabled": true, "minMatches": 1, "keywords": ["data analysis", "funnel", "retention analysis", "cohort analysis", "数据分析", "漏斗", "留存分析"] },
+    { "id": "prioritization", "task": "prioritization", "enabled": true, "minMatches": 1, "keywords": ["roadmap", "prioritization", "opportunity sizing", "路线图", "优先级", "机会评估"] },
+    { "id": "experimentation", "task": "experimentation", "enabled": true, "minMatches": 1, "keywords": ["experiment design", "ab test", "a/b test", "experiment hypothesis", "实验设计", "实验假设", "实验指标"] },
+    { "id": "validation", "task": "validation", "enabled": true, "minMatches": 1, "keywords": ["prototype", "usability test", "usability review", "原型", "可用性测试", "可用性评估"] },
+    { "id": "documentation", "task": "documentation", "enabled": true, "minMatches": 1, "keywords": ["prd", "product requirements document", "product specification", "产品需求文档", "需求规格"] },
+    { "id": "stakeholder", "task": "stakeholder", "enabled": true, "minMatches": 1, "keywords": ["stakeholder alignment", "cross-team alignment", "dependency coordination", "跨团队对齐", "干系人", "依赖协调"] },
+    { "id": "review", "task": "review", "enabled": true, "minMatches": 1, "keywords": ["retrospective", "launch review", "post-launch", "launch readiness", "复盘", "上线评审", "上线准备"] },
+    { "id": "writing", "task": "writing", "enabled": true, "minMatches": 1, "keywords": ["email", "meeting notes", "weekly update", "邮件", "会议纪要", "周报"] }
+  ],
+  "actionRules": [
+    { "id": "context", "action": "context", "enabled": true, "kinds": ["prompt_submitted", "tool_completed", "task_completed"], "keywords": ["based on the feedback", "provided context", "source materials", "business constraints", "根据用户反馈", "业务背景", "原始材料"], "excludeKeywords": [] },
+    { "id": "compare", "action": "compare", "enabled": true, "kinds": ["prompt_submitted", "tool_completed", "task_completed"], "keywords": ["compare", "compared", "comparison", "trade-offs", "alternatives", "对比", "比较", "方案取舍"], "excludeKeywords": [] },
+    { "id": "verify", "action": "verify", "enabled": true, "kinds": ["tool_completed", "task_completed"], "keywords": ["verified", "cross-checked", "validated against", "核查完成", "已核对", "已验证来源"], "excludeKeywords": ["not verified", "unverified", "尚未验证", "未核查"] },
+    { "id": "revise", "action": "revise", "enabled": true, "kinds": ["tool_completed", "task_completed"], "keywords": ["revised", "corrected", "updated after review", "已修正", "修正了", "根据核查修改"], "excludeKeywords": ["not revised", "尚未修正"] }
+  ],
+  "scoring": {
+    "workflowPoints": { "research": 10, "requirements": 10, "competition": 8, "design": 8, "data": 10, "prioritization": 10, "experimentation": 12, "validation": 12, "documentation": 6, "stakeholder": 5, "review": 10, "writing": 1, "unknown": 0 },
+    "actionPoints": { "context": 2, "prompt": 0, "compare": 3, "verify": 5, "revise": 4, "artifact": 3, "adopt": 5 },
+    "perActivityCap": 30,
+    "dailyCap": 60,
+    "weeklyTarget": 250,
+    "inferredMultiplier": 0.5
+  },
+  "members": { "pm-01": "PM 01", "pm-02": "PM 02", "pm-03": "PM 03", "pm-04": "PM 04", "pm-05": "PM 05", "local-pm": "Local PM" }
+}

@@ -1,0 +1,8 @@
+{
+  "version":1,
+  "hooks": {
+    "userPromptSubmitted":[{"type":"command","bash":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event userPromptSubmitted --include-content","powershell":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event userPromptSubmitted --include-content","timeoutSec":12}],
+    "postToolUse":[{"type":"command","bash":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event postToolUse --include-content","powershell":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event postToolUse --include-content","timeoutSec":12}],
+    "agentStop":[{"type":"command","bash":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event agentStop --include-content","powershell":"node /ABSOLUTE/PM_SIGNAL/collector/capture.mjs --provider copilot --event agentStop --include-content","timeoutSec":12}]
+  }
+}

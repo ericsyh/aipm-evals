@@ -1,0 +1,4 @@
+{"id":"automatic-competition-prompt","sessionId":"automatic-competition","kind":"prompt_submitted","text":"Compare competitors and their pricing. Identify trade-offs and alternatives.","origin":"sample"}
+{"id":"automatic-competition-result","sessionId":"automatic-competition","kind":"task_completed","text":"The competitor comparison was cross-checked. Findings were verified against sources and the recommendation was revised.","artifactProduced":true,"origin":"sample"}
+{"id":"automatic-roadmap-prompt","sessionId":"automatic-roadmap","kind":"prompt_submitted","text":"Prioritize the roadmap based on the feedback and compare alternatives.","origin":"sample"}
+{"id":"automatic-unknown-prompt","sessionId":"automatic-unknown","kind":"prompt_submitted","text":"Help with this task.","origin":"sample"}

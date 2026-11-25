@@ -1,0 +1,16 @@
+{
+  "name": "aipm-evals",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-based AI workflow analytics for product teams",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test",
+    "collect": "node collector/collect.mjs",
+    "capture": "node collector/capture.mjs",
+    "verify:browser": "node scripts/verify-browser.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
